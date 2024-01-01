@@ -18,15 +18,21 @@ async function fulfillBasicOrder_efficient_6GL6yc_abi(collectionSlug, tokenId, b
     return encoded
 }
 
+/**
+ * 测试代码，勿删，不用时注释掉
+ */
+// !(async function () {
+//     /**
+//      * boredapeyachtclub
+//      * 0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d
+//      * 9044
+//      */
+//     const collectionSlug = 'boredapeyachtclub';
+//     const tokenId = 9908
+//     const buyerAddress = '0xf011F97d87Ba4ac949C940a84B12E276E13f0529'
+//     const encoded = await fulfillBasicOrder_efficient_6GL6yc_abi(collectionSlug, tokenId, buyerAddress)
+// })()
 
-!(async function () {
-    /**
-     * boredapeyachtclub
-     * 0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d
-     * 9044
-     */
-    const collectionSlug = 'boredapeyachtclub';
-    const tokenId = 9908
-    const buyerAddress = '0xf011F97d87Ba4ac949C940a84B12E276E13f0529'
-    const encoded = await fulfillBasicOrder_efficient_6GL6yc_abi(collectionSlug, tokenId, buyerAddress)
-})()
+module.exports = {
+    fulfillBasicOrder_efficient_6GL6yc_abi: fulfillBasicOrder_efficient_6GL6yc_abi
+}
