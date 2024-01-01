@@ -1,7 +1,6 @@
 const axios = require('axios')
 const { fulfillBasicOrder_efficient_6GL6yc_abi } = require('./os/getFullfillAnListingAbi.js')
 const { opensea_x_api_key, ethereum_provider_url } = require('./config/os-config.js')
-const flipgodBuyNowAbi = require('./flipgodBuyNow-abi.json')
 const Web3 = require('web3')
 const web3 = new Web3(ethereum_provider_url)
 
@@ -56,6 +55,6 @@ async function getFlipgodBuyNowAbi(market, recipient, nftContract, tokenId) {
     const market = 'OpenSea';
     const recipient = '0xf011F97d87Ba4ac949C940a84B12E276E13f0529';
     const nftContract = '0x790b2cf29ed4f310bf7641f013c65d4560d28371';
-    const tokenId = 54452;
+    const tokenId = 97455;
     const encoded = await getFlipgodBuyNowAbi(market, recipient, nftContract, tokenId)
 })()
